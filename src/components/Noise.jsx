@@ -1,0 +1,5 @@
+import './Noise.css'
+
+export default function Noise() {
+    return <div className="noise" aria-hidden="true" />
+}
