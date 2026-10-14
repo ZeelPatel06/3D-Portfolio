@@ -14,7 +14,8 @@ const stats = [
 
 const skills = [
     'ReactJS', 'TypeScript', 'ThreeJS', 'R3F',
-    'GSAP', 'WebGL', 'NodeJS', 'Figma', 'ExpressJS', 'AI/ML', 'SQL', 'NoSQL'
+    'GSAP', 'WebGL', 'NodeJS', 'ExpressJS', 'AI/ML', 'SQL', 'MongoDB', 
+    'Gen-AI', 'Redis'
 ]
 
 export default function About() {

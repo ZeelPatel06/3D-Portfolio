@@ -10,19 +10,21 @@ const projects = [
         title: 'Shree Creation E-Commerce Platform',
         role: 'Design & Development',
         year: '2026',
-        desc: 'Built a full-stack MERN e-commerce platform for a local boutique store with product management, inventory, authentication, and secure Razorpay payments.',
+        desc: 'Built a full-stack MERN e-commerce platform for a local boutique store with product management, inventory, authentication, order management, and secure Razorpay payments.',
         tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
         image: '/portfolio_shree_project_lap.webp',
-        accent: '#b794f6'
+        accent: '#F7EE43',
+        proUrl: "https://shreecreation.online/"
     },
     {
         title: 'AI Sentiment Analysis',
         role: 'AI/ML at Haronex Technology',
         year: '2025',
-        desc: 'Built a Transformer-based NLP model to classify text into six emotions—joy, sadness, anger, fear, surprise, and love—with 93% test accuracy. Fine-tuned the model using Hugging Face Transformers for accurate real-time emotion.',
+        desc: 'Built a Transformer-based NLP model to classify text into six emotions—joy, sadness, anger, fear, surprise, and love—with 93% test accuracy. Fine-tuned the model with Hugging Face Transformers for real-time emotion.',
         tags: ['ML/DL', 'Transformers', 'NLP', 'PyTorch', 'Hugging Face'],
         image: '/portfolio_AI_senti_project_lap.webp',
-        accent: '#67e8f9'
+        accent: '#67e8f9',
+        proUrl: "https://docs.google.com/document/d/1vQNLqpGdTWNjl4eC5Qm9X6zemmotcb5bduW_CJKOFcs/edit?usp=sharing"
     },
     {
         title: 'Industrax | Manufacturing Automation',
@@ -31,16 +33,18 @@ const projects = [
         desc: 'Built a MERN-based manufacturing management platform that helps small businesses manage products, inventory, orders, and business operations efficiently.',
         tags: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB'],
         image: '/portfolio_industrax_project_lap.webp',
-        accent: '#f0abfc'
+        accent: '#FC56E6',
+        proUrl: "https://industrax-nicesoftserv-v1.vercel.app/dashboard"
     },
     {
-        title: 'Pulse Design System',
+        title: 'CusSup-AI | AI Customer Support',
         role: 'Creator',
-        year: '2023',
-        desc: 'A component library with motion primitives and a live token playground.',
-        tags: ['React', 'Motion'],
-        image: '/portfolio_industrax_project_lap.webp',
-        accent: '#a78bfa'
+        year: '2026',
+        desc: 'AI powered chatbot that helps businesses automate customer support and instantly answer customer queries using their website and business information.',
+        tags: ['ReactJS', 'Gen AI', 'NodeJS', 'MongoDB', 'ExpressJS'],
+        image: '/portfolio_CusSupAI_project_lap.webp',
+        accent: '#46F743',
+        proUrl: "https://customer-support-app-inky.vercel.app/"
     }
 ]
 
@@ -83,7 +87,8 @@ export default function Projects() {
 
                 <div className="projects-grid">
                     {projects.map((p, i) => (
-                        <article
+                        <a
+                            href={p.proUrl}
                             key={i}
                             className="project-card"
                             onMouseMove={onMove}
@@ -113,7 +118,7 @@ export default function Projects() {
                                 <span className="project-role">{p.role}</span>
                                 <span className="project-arrow">↗</span>
                             </div>
-                        </article>
+                        </a>
                     ))}
                 </div>
             </div>
